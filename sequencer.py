@@ -30,4 +30,4 @@ class Sequencer:
         self.bpm += increment_by
 
     def slow_down(self, decrement_by):
-        self.bpm += decrement_by
+        self.bpm -= decrement_by
