@@ -1,6 +1,6 @@
 class Sequencer:
 
-    bpm = 120
+    bpm = 140
     sequence = []
     current_step = 0
 
@@ -8,7 +8,7 @@ class Sequencer:
         self.sequence = [[], [], [], [], [], [], [], []]
 
     def get_tempo(self):
-        return (self.bpm / 60) / 8
+        return (60 / self.bpm) / 2
 
     def add_step(self, sound, at_step):
         self.sequence[at_step].append(sound)
